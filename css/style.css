@@ -140,4 +140,14 @@ End meyer reset
 
 :root {
     display: grid;
+    font-family: Helvetica, sans-serif, Arial;
+    gap: 5px;
+}
+
+ul {
+    list-style: none;
+}
+
+.header {
+    display: grid;
 }
