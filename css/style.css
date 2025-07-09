@@ -109,6 +109,7 @@ section {
 
 body {
     line-height: 1;
+    font-size: 1.2rem;
 }
 
 ol,
@@ -139,15 +140,142 @@ End meyer reset
 */
 
 :root {
-    display: grid;
     font-family: Helvetica, sans-serif, Arial;
     gap: 5px;
+}
+
+body,
+html {
+    height: 100%;
+    margin: 0;
 }
 
 ul {
     list-style: none;
 }
 
-.header {
+a:visited {
+    color: white;
+    text-decoration: none;
+}
+
+a:link {
+    color: white;
+    text-decoration: none;
+}
+
+.container {
     display: grid;
+    height: 100%;
+    grid-template-columns: 0.8fr 4fr;
+    grid-template-rows: 1fr 10fr;
+}
+
+.header-container {
+    grid-template-rows: 1fr 1fr;
+    grid-column: 2 / -1;
+    background-color: rgb(196, 202, 255);
+}
+
+.sidebar {
+    grid-column-start: 1;
+    grid-row: 2 / -1;
+    display: grid;
+    grid-auto-rows: 33%;
+    background-color: rgb(147, 110, 206);
+    font-size: 2rem;
+}
+
+.sidebar-hero {
+    display: grid;
+    align-items: center;
+    grid-row: 1/2;
+    padding: 1rem;
+    background-color: rgb(26, 190, 53);
+    text-align: center;
+}
+
+.nav-container {
+    display: grid;
+    grid-auto-flow: row;
+    grid-auto-rows: 10%;
+    row-gap: 0.8rem;
+    align-items: center;
+    align-content: center;
+    padding-left: 2rem;
+    background-color: rgb(0, 47, 255);
+}
+
+
+.main-content {
+    display: grid;
+    grid-template-columns: 5fr 1fr;
+    grid-column: 2 / -1;
+    grid-row: 2 / -1;
+    background-color: rgb(96, 7, 240);
+}
+
+.dashboard-utility {
+    background-color: blueviolet
+}
+
+.projects-container {
+    display: grid;
+    grid-column-start: 1;
+    grid-template-rows: 1fr 20fr;
+    gap: 5px;
+}
+
+.cards-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 0px 15px;
+    padding-bottom: 2.5%;
+    gap: 10px;
+}
+
+.side-content {
+    display: grid;
+    grid-column-start: 2;
+}
+
+.announcements {
+    display: grid;
+    grid-column: 2/-1;
+}
+
+.trending {
+    display: grid;
+    grid-column: 2/-1;
+}
+
+.card {
+    display: flex;
+    flex: 1;
+    padding: 15px;
+    border: 2px solid black;
+    border-radius: 15px;
+    background-color: aliceblue;
+}
+
+h1 {
+    padding: 12px;
+}
+
+.projects-container>h1 {
+    display: grid;
+    align-items: center;
+}
+
+/*
+*/
+
+input[type=search] {
+    border: 1px solid grey;
+    border-radius: 5px;
+    height: 20px;
+    width: 33%;
+    padding: 4px 23px 2px 30px;
+    outline: 0;
+    background-color: #f5f5f5;
 }
