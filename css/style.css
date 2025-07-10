@@ -218,6 +218,7 @@ h2 {
     grid-auto-rows: 1fr 1fr;
     background-color: #2A1458;
     font-size: 1.2rem;
+    row-gap: 1rem;
 }
 
 .sidebar-hero {
@@ -356,11 +357,27 @@ svg {
     border-radius: 50%;
 }
 
-.user-greeting img:hover,
-.user-greeting .username-large:hover {
+.user-greeting .username-large:hover,
+.user-greeting img:hover {
     cursor: pointer;
     opacity: 0.8;
 }
+
+.user-greeting img:hover+.welcome .username-large {
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+.user-greeting .username-large:hover img {
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+.util-top-right svg:hover {
+    cursor: pointer;
+    opacity: 0.8;
+}
+
 
 .projects-container {
     display: grid;
@@ -545,8 +562,6 @@ button:hover {
     justify-content: center;
 }
 
-.side-content h1 {}
-
 .projects-container>h1 {
     display: grid;
     align-items: center;
@@ -597,18 +612,6 @@ button:hover {
 }
 
 @media screen and (max-width: 1000px) {
-    html {
-        font-size: 10px;
-    }
-}
-
-
-@media screen and (max-width: 768px) {
-
-    html {
-        font-size: 8px;
-    }
-
     .header-container {
         padding: 0.9375rem 0.9375rem 0.75rem 1.2rem;
     }
