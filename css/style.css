@@ -170,6 +170,10 @@ a:link {
     text-decoration: none;
 }
 
+a:hover {
+    color: #f3edff;
+}
+
 .container {
     display: grid;
     height: 100vh;
@@ -341,18 +345,21 @@ h2 {
 }
 
 .announcement-section:not(:last-child),
-.trending-section:not(:last-child) {
+.trending-user:not(:last-child) {
     border-bottom: 1px solid #483AA0;
 }
 
 .announcement-section:not(:first-child),
-.trending-section:not(:first-child) {
+.trending-user:not(:first-child) {
     margin-top: 5px;
 }
 
-.announcement-section,
-.trending-section {
+.announcement-section {
     padding: 15px;
+}
+
+.trending-user {
+    padding: 0px 15px 15px 15px;
 }
 
 .announcements h1,
