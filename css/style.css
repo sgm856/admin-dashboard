@@ -482,6 +482,7 @@ svg {
 .trending-user {
     display: flex;
     gap: 1.25rem;
+    align-items: center;
 }
 
 .trending-user-info {
@@ -626,12 +627,21 @@ button:hover {
         font-size: 8px;
     }
 
+    .container {
+        grid-template-columns: 1fr 3.5fr;
+    }
+
+    .searchbar-input {
+        flex: 0;
+        padding: 0.25rem;
+    }
+
     .sidebar {
-        grid-template-rows: 15rem 4rem;
+        grid-template-rows: 24rem 4rem;
     }
 
     .sidebar .nav-container {
-        gap: 0.5rem;
+        gap: 1.5rem;
     }
 
     .sidebar-hero {
@@ -650,15 +660,41 @@ button:hover {
     }
 
     .sidebar {
-        font-size: 1.1rem;
+        font-size: 1.3rem;
     }
 
     .sidebar svg {
-        height: 1.1rem;
-        width: 1.1rem;
+        height: 1.2rem;
+        width: 1.2rem;
+    }
+
+    .projects-container {
+        padding: 0px 1rem;
+    }
+
+    .main-content {
+        grid-template-columns: 2fr 1fr;
     }
 
     .cards-container {
         grid-template-columns: 1fr;
+    }
+
+    .user-avatar-small {
+        height: 3rem;
+        width: 3rem;
+    }
+
+    .trending-user-info {
+        gap: 0.25rem;
+    }
+
+    .trending-card {
+        padding: 1rem 1rem 1rem 1rem;
+    }
+
+    .user-blurb {
+        flex: 1;
+        font-size: 0.9rem;
     }
 }
