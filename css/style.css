@@ -605,6 +605,10 @@ button:hover {
         font-size: 8px;
     }
 
+    .header-container {
+        padding: 0.9375rem 0.9375rem 0.75rem 1.2rem;
+    }
+
     .container {
         grid-template-columns: 1fr 3.5fr;
     }
