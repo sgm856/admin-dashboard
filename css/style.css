@@ -262,6 +262,11 @@ h2 {
     color: white;
 }
 
+.user-small:hover {
+    cursor: pointer;
+    opacity: 0.8;
+}
+
 .dashboard-utility {
     display: grid;
     grid-template-columns: 1.5fr 1fr;
@@ -285,6 +290,12 @@ h2 {
     height: 4rem;
     width: 4rem;
     border-radius: 50%;
+}
+
+.user-greeting img:hover,
+.user-greeting .username-large:hover {
+    cursor: pointer;
+    opacity: 0.8;
 }
 
 .projects-container {
@@ -387,6 +398,14 @@ h2 {
 
 .card:hover {
     background-color: #f3edff;
+    cursor: pointer;
+    transform: translateX(2px);
+    transition: transform 0.1s ease;
+}
+
+.trending-user:hover,
+.announcement-section:hover {
+    opacity: 0.8;
     cursor: pointer;
     transform: translateX(2px);
     transition: transform 0.1s ease;
