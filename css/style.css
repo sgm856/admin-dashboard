@@ -185,7 +185,7 @@ a:link {
     display: grid;
     grid-template-rows: 1fr 1fr;
     row-gap: 15%;
-    padding: 15px 15px 25px 35px;
+    padding: 15px 15px 12px 35px;
 }
 
 h2 {
@@ -236,14 +236,21 @@ h2 {
 
 .header-utility {
     display: grid;
-    grid-template-columns: 1fr 1.5fr;
+    grid-template-columns: 1fr 0.3fr;
     grid-row: 1/2;
     align-content: center;
 }
 
 .user-small {
     display: flex;
+    gap: 5px;
     align-items: center;
+}
+
+.user-small img {
+    height: 2rem;
+    width: 2rem;
+    border-radius: 50%;
 }
 
 .user-small h2 {
@@ -357,7 +364,7 @@ h2 {
     display: flex;
     flex-direction: column;
     flex: 1;
-    padding: 15px;
+    padding: 20px;
     border-radius: 5px;
     background-color: white;
     box-shadow: 4px 5px 4px rgb(202, 202, 202);
@@ -369,6 +376,13 @@ h2 {
 .card h1 {
     padding: 0px;
     font-size: 1.4rem;
+}
+
+.card:hover {
+    background-color: #f3edff;
+    cursor: pointer;
+    transform: translateX(2px);
+    transition: transform 0.1s ease;
 }
 
 .announcement-card {
@@ -410,10 +424,30 @@ h2 {
     border-radius: 50%;
 }
 
+button {
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    max-width: 100px;
+    max-height: 40px;
+    background-color: #fff;
+    font-weight: 800;
+    font-size: 1.1rem;
+    padding: 10px 20px;
+
+}
+
+button:hover {
+    background-color: #f3edff;
+    cursor: pointer;
+}
+
 .buttons {
     display: flex;
-    gap: 15px;
+    gap: 20px;
     grid-column-start: 2;
+    align-items: center;
+    justify-content: center;
 }
 
 .side-content h1 {}
@@ -459,16 +493,4 @@ h2 {
     border-radius: 0 5px 5px 0;
     cursor: pointer;
     user-select: none;
-}
-
-button {
-    outline: none;
-    border: none;
-    border-radius: 5px;
-    width: 100%;
-    max-width: 100px;
-    max-height: 40px;
-    background-color: #fff;
-    font-weight: 800;
-    font-size: 1.1rem;
 }
