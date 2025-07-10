@@ -189,7 +189,7 @@ a:hover {
     display: grid;
     grid-template-rows: 1fr 1fr;
     row-gap: 15%;
-    padding: 15px 15px 12px 35px;
+    padding: 15px 15px 12px 55px;
 }
 
 h2 {
@@ -222,9 +222,13 @@ h2 {
 }
 
 .sidebar-hero {
-    display: flex;
     gap: 0.5rem;
     font-size: 1.8rem;
+}
+
+.sidebar-hero a {
+    display: flex;
+    align-items: center;
 }
 
 svg {
@@ -244,16 +248,29 @@ svg {
 }
 
 .nav-link {
+    padding: 0.25rem;
+}
+
+.nav-link a {
     display: flex;
     flex: 0;
     align-items: center;
     gap: 1rem;
-    padding: 0.25rem;
 }
 
 .nav-link svg {
     height: 2rem;
     width: 2rem;
+}
+
+.nav-link:hover svg,
+.sidebar-hero a:hover svg {
+    fill: #f3edff;
+}
+
+.nav-link:hover {
+    transform: translateX(2px);
+    transition: transform 0.25s ease;
 }
 
 .main-content {
