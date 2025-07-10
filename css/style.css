@@ -194,6 +194,18 @@ a:hover {
     padding: 0.9375rem 0.9375rem 0.75rem 3.4375rem;
 }
 
+.util-top-right {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.header-utility .util-top-right svg {
+    height: 1.5rem;
+    width: 1.5rem;
+    margin-top: 0.2rem;
+}
+
 h2 {
     font-size: 2rem;
 }
@@ -231,6 +243,7 @@ h2 {
 .sidebar-hero a {
     display: flex;
     align-items: center;
+    flex: 1 1 0;
 }
 
 svg {
