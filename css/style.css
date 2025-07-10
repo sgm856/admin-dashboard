@@ -258,8 +258,22 @@ h2 {
 }
 
 .user-greeting {
+    display: flex;
     color: white;
     grid-column-start: 1;
+    gap: 15px;
+    align-items: center;
+}
+
+.welcome {
+    display: flex;
+    flex-direction: column;
+}
+
+.user-greeting img {
+    height: 4rem;
+    width: 4rem;
+    border-radius: 50%;
 }
 
 .projects-container {
