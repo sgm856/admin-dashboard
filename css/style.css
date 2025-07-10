@@ -221,11 +221,39 @@ h2 {
     justify-content: center;
 }
 
+.sidebar-hero {
+    display: flex;
+    gap: 0.5rem;
+    font-size: 1.8rem;
+}
+
+svg {
+    fill: white;
+}
+
+.sidebar-hero svg {
+    height: 4rem;
+    width: 4rem;
+}
+
 .nav-container {
     display: flex;
     flex-direction: column;
-    row-gap: 2rem;
+    row-gap: 1rem;
     font-weight: 800;
+}
+
+.nav-link {
+    display: flex;
+    flex: 0;
+    align-items: center;
+    gap: 1rem;
+    padding: 0.25rem;
+}
+
+.nav-link svg {
+    height: 2rem;
+    width: 2rem;
 }
 
 .main-content {
@@ -389,6 +417,11 @@ h2 {
     line-height: 1.5;
     border-left: 4px solid #0E2148;
     border-top: 1px solid #0E2148;
+}
+
+.trending-card {
+    border-left: 4px solid #2A1458;
+    border-top: 1px solid #2A1458;
 }
 
 .card h1 {
