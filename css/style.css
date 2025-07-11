@@ -139,6 +139,98 @@ table {
 End meyer reset
 */
 
+/*
+Font
+*/
+@font-face {
+    font-family: 'Creato Display';
+    src: url('creatodisplay-thin-webfont.woff2') format('woff2'),
+        url('creatodisplay-thin-webfont.woff') format('woff');
+    font-weight: 100;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Creato Display';
+    src: url('creatodisplay-light-webfont.woff2') format('woff2'),
+        url('creatodisplay-light-webfont.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Creato Display';
+    src: url('creatodisplay-regular-webfont.woff2') format('woff2'),
+        url('creatodisplay-regular-webfont.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Creato Display';
+    src: url('creatodisplay-medium-webfont.woff2') format('woff2'),
+        url('creatodisplay-medium-webfont.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Creato Display';
+    src: url('creatodisplay-bold-webfont.woff2') format('woff2'),
+        url('creatodisplay-bold-webfont.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Creato Display';
+    src: url('creatodisplay-extrabold-webfont.woff2') format('woff2'),
+        url('creatodisplay-extrabold-webfont.woff') format('woff');
+    font-weight: 800;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Creato Display';
+    src: url('creatodisplay-black-webfont.woff2') format('woff2'),
+        url('creatodisplay-black-webfont.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+}
+
+/* Italic versions */
+@font-face {
+    font-family: 'Creato Display';
+    src: url('creatodisplay-lightitalic-webfont.woff2') format('woff2'),
+        url('creatodisplay-lightitalic-webfont.woff') format('woff');
+    font-weight: 300;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Creato Display';
+    src: url('creatodisplay-mediumitalic-webfont.woff2') format('woff2'),
+        url('creatodisplay-mediumitalic-webfont.woff') format('woff');
+    font-weight: 500;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Creato Display';
+    src: url('creatodisplay-extrabolditalic-webfont.woff2') format('woff2'),
+        url('creatodisplay-extrabolditalic-webfont.woff') format('woff');
+    font-weight: 800;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Creato Display';
+    src: url('creatodisplay-blackitalic-webfont.woff2') format('woff2'),
+        url('creatodisplay-blackitalic-webfont.woff') format('woff');
+    font-weight: 900;
+    font-style: italic;
+}
+
 :root {
     font-family: Helvetica, sans-serif, Arial;
     gap: 0.3125rem;
@@ -349,6 +441,7 @@ svg {
 .welcome {
     display: flex;
     flex-direction: column;
+    gap: 1px;
 }
 
 .user-greeting img {
@@ -358,19 +451,37 @@ svg {
 }
 
 .user-greeting .username-large:hover,
-.user-greeting img:hover {
+.user-greeting img:hover,
+.user-greeting img:hover+.welcome .username-large,
+.user-greeting .username-large:hover img .util-top-right svg:hover {
     cursor: pointer;
     opacity: 0.8;
 }
 
-.user-greeting img:hover+.welcome .username-large {
-    cursor: pointer;
-    opacity: 0.8;
+.card-svgs {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: flex-end;
 }
 
-.user-greeting .username-large:hover img {
-    cursor: pointer;
-    opacity: 0.8;
+.svg-card-group {
+    display: flex;
+    gap: 1.5rem;
+    margin-top: 1rem;
+    margin-right: 2.75rem;
+    margin-bottom: 0.5rem;
+}
+
+.card-svgs svg:hover {
+    fill: #483AA0;
+}
+
+.card-svgs svg {
+    height: 2.25rem;
+    width: 2.25rem;
+    fill: #2A1458;
 }
 
 .util-top-right svg:hover {
