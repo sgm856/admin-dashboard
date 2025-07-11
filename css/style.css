@@ -799,6 +799,10 @@ button:hover {
     }
 
     @media screen and (max-width: 800px) {
+        html {
+            font-size: 8px;
+        }
+
         .header-container .username-large {
             font-size: 2rem;
         }
