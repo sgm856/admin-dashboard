@@ -713,6 +713,13 @@ button:hover {
     border-radius: 0 0.3125rem 0.3125rem 0;
     cursor: pointer;
     user-select: none;
+    flex: 0.1;
+}
+
+.searchbar-button svg {
+    width: 1rem;
+    height: 1rem;
+    fill: black;
 }
 
 @media screen and (max-width: 1200px) {
